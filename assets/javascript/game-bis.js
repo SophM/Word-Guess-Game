@@ -3,7 +3,7 @@
 // ==================================
 
 // array with the possible words to guess
-var possibleWords = ["mountain", "shrimp", "squirrel", "swamp", "savannah", "tundra", "bumblebee", "owl", "platypus", "forest", "garrigue", "salamander", "taiga", "hippopotamus"];
+var possibleWords = ["mountain", "shrimp", "squirrel", "chimpanzee", "swamp", "savannah", "tundra", "bumblebee", "owl", "platypus", "forest", "garrigue", "salamander", "taiga", "hippopotamus"];
 // variable to keep track of the wins
 var wins = 0;
 // variable to keep track of the losses
@@ -153,59 +153,63 @@ document.onkeyup = function(event) {
             showLettersTriedUpdateNbGuessesLeft(playerGuess);
             // and the new number of guesses is displayed on the screen
             showNumberGuessesLeft();
+
+            // if the player ran out of guesses, he losses
+            if (guessesRemaining === 0) {
+                // the number of losses increase by 1 and
+                // the new number is displayed on the screen
+                updateLosses();
+                // the game starts over...
+                // the number of letters guessed is set to zero
+                resetNbLettersGuessed();
+                // the letters tried are erased from the screen
+                eraseLettersTried();
+                // the number of guesses remaining is set to 10
+                resetGuessesRemaining();
+                // computer selects a new word
+                selectedWord = chooseWord(possibleWords);
+                console.log(selectedWord);
+                console.log(possibleWords);
+                // the selected word is transformed in an array
+                wordInArray = stringToArray(selectedWord);
+                // the letters of the selected word are hidden
+                wordHidden = hideLetters();
+                // show the hidden word on the screen
+                showHiddenWord();
+            }
+
         // if the letter tried is part of the word,
         } else { 
             // the good guess is displayed at the right place on the word hidden on the screen
             // and the number of letters guessed increases by 1
             revealGoodGuessUpdateNbGoodGuess(playerGuess);
+
+            // if the player has guessed all the letters, he wins
+            if (numberGuessed === selectedWord.length) {
+                // the number of wins increases by 1 and
+                // the new number is displayed on the screen
+                updateWins();
+                // the game starts over...
+                // the number of letters guessed is set to zero
+                resetNbLettersGuessed();
+                // the letters tried are erased from the screen
+                eraseLettersTried();
+                // the number of guesses remaining is set to 10
+                resetGuessesRemaining();
+
+                
+                // computer selects a word
+                selectedWord = chooseWord(possibleWords);
+                console.log(selectedWord);
+                console.log(possibleWords);
+                // the selected word is transformed in an array
+                wordInArray = stringToArray(selectedWord);
+                // the letters of the selected word are hidden
+                wordHidden = hideLetters();
+                // show the hidden word on the screen
+                showHiddenWord();
+            }
         }
 
-    // if all the letters have been guessed   
-    } else if (numberGuessed === selectedWord.length) {
-        // the number of wins increases by 1 and
-        // the new number is displayed on the screen
-        updateWins();
-        // the game starts over...
-        // the number of letters guessed is set to zero
-        resetNbLettersGuessed();
-        // the letters tried are erased from the screen
-        eraseLettersTried();
-        // the number of guesses remaining is set to 10
-        resetGuessesRemaining();
-        // computer selects a word
-        selectedWord = chooseWord(possibleWords);
-        console.log(selectedWord);
-        // the selected word is transformed in an array
-        wordInArray = stringToArray(selectedWord);
-        console.log(wordInArray);
-        // the letters of the selected word are hidden
-        wordHidden = hideLetters();
-        console.log(wordHidden);
-        // show the hidden word on the screen
-        showHiddenWord();
-        console.log(showHiddenWord());
-
-    // if the player runs out of guesses   
-    } else if (guessesRemaining === 0) {
-        // the number of losses increase by 1 and
-        // the new number is displayed on the screen
-        updateLosses();
-        // the game starts over...
-        // the number of letters guessed is set to zero
-        resetNbLettersGuessed();
-        // the letters tried are erased from the screen
-        eraseLettersTried();
-        // the number of guesses remaining is set to 10
-        resetGuessesRemaining();
-        // computer selects a word
-        selectedWord = chooseWord(possibleWords);
-        console.log(selectedWord);
-        // the selected word is transformed in an array
-        wordInArray = stringToArray(selectedWord);
-        // the letters of the selected word are hidden
-        wordHidden = hideLetters();
-        // show the hidden word on the screen
-        showHiddenWord();
     }
-
 };
