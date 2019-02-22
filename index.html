@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <!-- for responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <!-- link the css files - starting by the reset one -->
+    <link rel="sytlesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <title>Word-Guess Game</title>
+</head>
+
+<body>
+
+    <h1>Word-Guess game</h1>
+    <h2>Will you be able to guess what the computer is thinking?</h2>
+
+    <h2>Press any key to get started!</h2>
+
+    <br><br>
+    
+    <h1>Word to guess</h1>
+    <h1 id="word-to-guess"></h1>
+    
+    <br><br>
+    
+    <h2>Number of guesses remaining: <span id="nb-guesses">10</span></h2>
+    <h2>Letters already tried: <span id="letters-tried">...</span></h2>
+
+    <h2>Wins: <span id="number-win">0</span></h2>
+    <h2>Losses: <span id="number-loss">0</span></h2>
+
+    <!-- link the javascript file -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
