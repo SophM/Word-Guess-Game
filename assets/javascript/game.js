@@ -30,7 +30,7 @@ var pictures = [
     {w: "squirrel", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/squirrel.jpg?raw=true"},
     {w: "chimpanzee", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/chimpanzee.jpg?raw=true"},
     {w: "swamp", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/swamp.jpg?raw=true"},
-    {w: "savannah", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/savannah.jpg?raw=true"},
+    {w: "savanna", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/savannah.jpg?raw=true"},
     {w: "tundra", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/tundra.jpg?raw=true"},
     {w: "hamster", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/hamster.jpg?raw=true"},
     {w: "bumblebee", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/bumblebee.jpg?raw=true"},
@@ -82,7 +82,8 @@ function stringToArray(string) {
 
 // function to hide the letters of the selected word
 function hideLetters() {
-    // to reset the wordHidden array (so it doesn't keep letters of previous round)
+    // to reset the wordHidden array - so it doesn't keep the letters of the previous word
+    // if the new word to guess is smaller
     wordHidden = [];
     for (var i = 0; i < selectedWord.length; i++) {
         wordHidden[i] = "_";
