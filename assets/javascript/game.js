@@ -3,7 +3,7 @@
 // ==================================
 
 // array with the possible words to guess
-var possibleWords = ["mountain", "shrimp", "squirrel","chimpanzee", "swamp", "savannah", "tundra", "bumblebee", "owl", "platypus", "forest", "salamander", "taiga", "hippopotamus"];
+var possibleWords = ["mountain", "shrimp", "squirrel","chimpanzee", "swamp", "savannah", "tundra", "hamster", "bumblebee", "owl", "platypus", "forest", "salamander", "taiga", "hippopotamus"];
 // variable to keep track of the wins
 var wins = 0;
 // variable to keep track of the losses
