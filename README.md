@@ -14,6 +14,7 @@ To build this game, I used the following technologies:
 - HTML
 - Javascript
 - CSS
+- Bootstrap
 
 Below is a screenshot of the game.
 
