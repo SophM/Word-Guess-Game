@@ -1,7 +1,6 @@
 ### Word-Guess Game Pseudocode
 
-1. Computer chooses a random word in a list of possible words. The selected word will be displayed
-on the screen with its letters hidden.
+1. Computer chooses a random word in a list of possible words. The selected word will be displayed on the screen with its letters hidden.
 
 2. Player presses any letter on the keyboard to start the game.
 

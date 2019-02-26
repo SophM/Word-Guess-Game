@@ -216,7 +216,7 @@ document.onkeyup = function(event) {
 
             // if the player ran out of guesses, she/he losses
             if (guessesRemaining === 0) {
-                // the number of losses increase by 1 and
+                // the number of losses increases by 1 and
                 // the new number is displayed on the screen
                 updateLosses();
                 // the game starts over...
