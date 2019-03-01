@@ -25,21 +25,21 @@ var playerGuess;
 
 // // Array to associate a picture to the selected word when the player guessed it
 var pictures = [
-    {w: "mountain", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/mountains.jpg?raw=true"},
-    {w: "shrimp", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/shrimp.jpg?raw=true"},
-    {w: "squirrel", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/squirrel.jpg?raw=true"},
-    {w: "chimpanzee", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/chimpanzee.jpg?raw=true"},
-    {w: "swamp", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/swamp.jpg?raw=true"},
-    {w: "savanna", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/savanna.jpg?raw=true"},
-    {w: "tundra", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/tundra.jpg?raw=true"},
-    {w: "hamster", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/hamster.jpg?raw=true"},
-    {w: "bumblebee", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/bumblebee.jpg?raw=true"},
-    {w: "owl", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/owl.jpg?raw=true"},
-    {w: "platypus", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/Duckbilled_platypus.jpg?raw=true"},
-    {w: "forest", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/forest.jpg?raw=true"},
-    {w: "meerkat", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/meerkat.jpg?raw=true"},
-    {w: "salamander", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/salamander.jpg?raw=true"},
-    {w: "hippopotamus", s: "https://github.com/SophM/Word-Guess-Game/blob/master/assets/images/hippo.jpg?raw=true"},
+    {w: "mountain", s: "assets/images/mountains.jpg"},
+    {w: "shrimp", s: "assets/images/shrimp.jpg"},
+    {w: "squirrel", s: "assets/images/squirrel.jpg"},
+    {w: "chimpanzee", s: "assets/images/chimpanzee.jpg"},
+    {w: "swamp", s: "assets/images/swamp.jpg"},
+    {w: "savanna", s: "assets/images/savanna.jpg"},
+    {w: "tundra", s: "assets/images/tundra.jpg"},
+    {w: "hamster", s: "assets/images/hamster.jpg"},
+    {w: "bumblebee", s: "assets/images/bumblebee.jpg"},
+    {w: "owl", s: "assets/images/owl.jpg"},
+    {w: "platypus", s: "assets/images/Duckbilled_platypus.jpg"},
+    {w: "forest", s: "assets/images/forest.jpg"},
+    {w: "meerkat", s: "assets/images/meerkat.jpg"},
+    {w: "salamander", s: "assets/images/salamander.jpg"},
+    {w: "hippopotamus", s: "assets/images/hippo.jpg"},
 ]
 
 // Array to associate a fun fact about the selected word when the player guessed it
