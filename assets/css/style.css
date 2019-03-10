@@ -1,24 +1,11 @@
-body {
-    position: relative;
-}
-
-#pic-fun-fact {
-    position: absolute;
-    top: 30%;
-    left: 55%;
-}
-
-#pic {
-    width: 450px;
-}
-
-#fun-fact {
-    width: 450px;
-    font-weight: bold;
-    font-size: 16px;
+#instruction {
+    color: greenyellow;
 }
 
 #word {
     border: 3px solid greenyellow;
 }
 
+#text, #fun-fact {
+    font-size: 1.3rem;
+}

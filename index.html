@@ -17,31 +17,41 @@
     <div class="container mt-3">
 
         <h1 class="text-center">Word-Guess game</h1>
-        <h2 class="text-center">********** Play and learn **********</h2>
+        <h2 class="text-center">*** Play and learn ***</h2>
         <br>
-        <h2 class="text-white">Press any letter to get started!</h2>
+        <h2 id="instruction" class="text-center">Press any letter to get started!</h2>
 
-        <br><br>
+        <br>
 
-        <div class="row text-center ml-5">
-            <div id="word" class="col-sm-5">
-                <h1>Word to guess</h1>
-                <h1 id="word-to-guess"></h1>
+        <div class="row mx-auto">
+            <div class="col-sm-12">
+                <h3 class="m-0 p-2 text-center">   Wins: <span id="number-win">0</span><span class="pl-5">Losses: <span id="number-loss">0</span></span></h3>
+                <br>
             </div>
         </div>
-        
-        <br><br>
 
-        <div id="pic-fun-fact">
-            <img id="pic"/>
-            <p id="fun-fact" class="text-center mt-2"></p>
+        <div class="row mx-auto">
+            <div class="col-sm-6 col-md-7 col-lg-6">
+                <div id="word" class="text-center">
+                    <h2>Word to guess</h2>
+                    <h2 contenteditable id="word-to-guess"></h2>
+                </div>
+                <br>
+                <p id="text">Number of guesses remaining: <span id="nb-guesses">10</span></p>
+                <p id="text">Letters already tried: <span id="letters-tried">...</span></p>
+                
+                <br>
+            </div>
+
+            <div class="col-sm-6 col-md-5 col-lg-6">
+                <div id="pic-fun-fact">
+                    <img id="pic" class="img-fluid"/>
+                    <p id="fun-fact" class="text-center mt-2 caption w-100"></p>
+                </div>
+            </div>
         </div>
     
-        <h2>Number of guesses remaining: <span id="nb-guesses">10</span></h2>
-        <h2>Letters already tried: <span id="letters-tried">...</span></h2>
-
-        <h2>Wins: <span id="number-win">0</span></h2>
-        <h2>Losses: <span id="number-loss">0</span></h2>
+        
 
     </div>
 
