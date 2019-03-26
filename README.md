@@ -35,3 +35,9 @@ To build this game, I used the following technologies:
 ### Screenshot of the game, after the word "hippopotamus" has been guessed and a new round is ready to start.
 
 ![Screenshot of the game when the word has been guessed](https://github.com/SophM/Word-Guess-Game/blob/master/assets/screenshots_for_readme/Screenshot_word_guessed.png?raw=true)
+
+--- 
+
+### Contribution
+
+- Sophie Mallez
