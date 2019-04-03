@@ -2,7 +2,7 @@
 
 In this project, I built a word-guess game, whose goals are for the player to guess a word and learn new things! In fact, if the player guesses the word, a picture representing the word and a fun fact about the word are displayed.
 
-The game has a responsive layout and can be played on different devices.
+The game has a responsive layout and can be played on computers with different screen sizes. Not yet on smartphones... I am working on it!
 
 [Click me to check the game out!](https://sophm.github.io/Word-Guess-Game/)
 
